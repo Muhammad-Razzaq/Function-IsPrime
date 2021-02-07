@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Prime</title>
+</head>
+
+<body>
+    <h3>(Is Prime: True) & (Is Not Prime: False)</h3>
+    <input type="number" id="user">
+    <input type="submit" onclick="IsPrime()" value="Add">
+    <h4>You Enter : <span id="num1"></span></h4>
+    <h4>Result : <span id="result"></span></h4>
+    
+</body>
+<script>
+    function IsPrime(num) {
+        num = document.getElementById("user").value;
+        let p = 0;
+        if ((num % 2) === 0) {
+            p = 1;
+            document.getElementById("num1").innerHTML = num;
+            return document.getElementById("result").innerHTML = false;
+        }
+        else if (p === 0){
+            document.getElementById("num1").innerHTML = num;
+            return document.getElementById("result").innerHTML = true;
+        }
+        return false;
+    }
+</script>
+
+</html>
